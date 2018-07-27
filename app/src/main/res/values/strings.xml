@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">QoC Test</string>
+    <string name="navigation_home">Home</string>
+    <string name="hide_snackbar">Hide</string>
+    <string name="loading">Loading…</string>
+    <string name="entry_error_title">Entry Error</string>
+    <string name="list_entries_title">Top 100</string>
+    <string name="app_details">APP DETAILS</string>
+    <string name="title">TITLE</string>
+    <string name="release_date">RELEASE DATE</string>
+    <string name="summary">SUMMARY</string>
+    <string name="price">PRICE</string>
+    <string name="category">CATEGORY</string>
+    <string name="publisher">PUBLISHER</string>
+    <string name="app_link">APP LINK</string>
+</resources>
