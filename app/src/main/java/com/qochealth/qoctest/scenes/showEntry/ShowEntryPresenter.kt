@@ -28,8 +28,7 @@ class ShowEntryPresenter(private val fragment: WeakReference<ShowEntryDisplayabl
                 price = String.format(Locale.US, "%.2f %s", response.entry.price, response.entry.currency),
                 category = response.entry.category?.name ?: "",
                 link = response.entry.link,
-                publisherName = response.entry.author?.name ?: "",
-                publisherLink = response.entry.author?.link ?: ""
+                publisher = "${response.entry.author?.name ?: ""} ${response.entry.author?.link ?: ""}"
         )
 
         fragment.get()?.displayFetchedEntry(viewModel)

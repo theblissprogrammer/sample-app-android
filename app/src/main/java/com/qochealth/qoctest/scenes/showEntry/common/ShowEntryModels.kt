@@ -21,6 +21,5 @@ sealed class ShowEntryModels {
             val price: String,
             val category: String,
             val link: String,
-            val publisherName: String,
-            val publisherLink: String): ShowEntryModels()
+            val publisher: String): ShowEntryModels()
 }

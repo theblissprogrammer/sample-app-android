@@ -72,7 +72,7 @@ class ShowEntryFragment: BaseFragment(), ShowEntryDisplayable, HasDependencies {
         summaryTextView.text = viewModel.summary
         priceTextView.text = viewModel.price
         categoryTextView.text = viewModel.category
-        publisherTextView.text = "${viewModel.publisherName} ${viewModel.publisherLink}"
+        publisherTextView.text = viewModel.publisher
         appLinkTextView.text = viewModel.link
     }
 }
