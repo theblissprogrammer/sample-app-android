@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_six"
+    android:background="@color/white_2"
     android:gravity="top|center"
     android:clipChildren="false"
     android:orientation="vertical">
@@ -29,7 +29,7 @@
                 android:textColor="@android:color/black"
                 android:letterSpacing="0.17"
                 android:gravity="center_horizontal"
-                android:background="@color/whiteish_grey"
+                android:background="@color/white_grey"
                 android:paddingTop="16dp"
                 android:paddingBottom="12dp"
                 android:text="@string/app_details"
@@ -68,7 +68,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 tools:text="title" />
 
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -103,7 +103,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 tools:text="title" />
 
@@ -111,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -138,7 +138,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 tools:text="title" />
 
@@ -146,7 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -173,7 +173,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 tools:text="title" />
 
@@ -181,7 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -208,7 +208,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 tools:text="title" />
 
@@ -216,7 +216,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -243,7 +243,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 android:autoLink="web"
                 tools:text="title" />
@@ -252,7 +252,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="16dp"
-                android:background="@color/whiteish_grey"/>
+                android:background="@color/white_grey"/>
 
 
             <TextView
@@ -279,7 +279,7 @@
                 android:textSize="12sp"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textColor="@color/greyish_brown"
+                android:textColor="@color/grey"
                 android:lineSpacingExtra="4sp"
                 android:autoLink="web"
                 tools:text="title" />
