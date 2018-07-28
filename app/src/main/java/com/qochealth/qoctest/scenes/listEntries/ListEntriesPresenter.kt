@@ -6,6 +6,7 @@ import com.example.coreandroid.sources.logging.LogHelper
 import com.qochealth.qoctest.R
 import com.qochealth.qoctest.common.cleanBase.AppModels
 import com.qochealth.qoctest.common.extensions.getString
+import com.qochealth.qoctest.common.localizedDescription
 import com.qochealth.qoctest.scenes.listEntries.common.ListEntriesDisplayable
 import com.qochealth.qoctest.scenes.listEntries.common.ListEntriesModels
 import com.qochealth.qoctest.scenes.listEntries.common.ListEntriesPresentable
@@ -28,7 +29,7 @@ class ListEntriesPresenter(private val fragment: WeakReference<ListEntriesDispla
         // Handle and parse error
         val viewModel = AppModels.Error(
                 title = getString(R.string.entry_error_title),
-                message = error.localizedMessage
+                message = error.localizedDescription()
         )
 
         fragment.get()?.display(error = viewModel)

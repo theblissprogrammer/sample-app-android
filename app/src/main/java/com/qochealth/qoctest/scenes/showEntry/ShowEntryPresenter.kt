@@ -4,6 +4,7 @@ import com.example.coreandroid.sources.errors.DataError
 import com.qochealth.qoctest.R
 import com.qochealth.qoctest.common.cleanBase.AppModels
 import com.qochealth.qoctest.common.extensions.getString
+import com.qochealth.qoctest.common.localizedDescription
 import com.qochealth.qoctest.scenes.showEntry.common.ShowEntryDisplayable
 import com.qochealth.qoctest.scenes.showEntry.common.ShowEntryModels
 import com.qochealth.qoctest.scenes.showEntry.common.ShowEntryPresentable
@@ -38,7 +39,7 @@ class ShowEntryPresenter(private val fragment: WeakReference<ShowEntryDisplayabl
         // Handle and parse error
         val viewModel = AppModels.Error(
                 title = getString(R.string.entry_error_title),
-                message = error.localizedMessage
+                message = error.localizedDescription()
         )
 
         fragment.get()?.display(error = viewModel)

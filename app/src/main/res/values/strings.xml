@@ -13,4 +13,19 @@
     <string name="category">CATEGORY</string>
     <string name="publisher">PUBLISHER</string>
     <string name="app_link">APP LINK</string>
+
+    <string name="generic.incomplete.form.error.message">The form is incomplete. Please fill out the form and try again.</string>
+    <string name="unauthorized.error.message">You must log in to view this content. Please log in or sign up.</string>
+    <string name="no.internet.error.message">No internet connection is available.</string>
+    <string name="bad.network.request.error.message">The server did not recognize your request.</string>
+    <string name="unknown.reason.error.message">There was an error with your request.</string>
+    <string name="field.prefix">Field \"%1$s\"</string>
+    <string name="no.data.message">No data results</string>
+
+    <string name="non.existent.error.message">No data was found for your request.</string>
+    <string name="parse.failure.error.message">The response from the server could not be read.</string>
+    <string name="database.failure.error.message">An unexpected database error has occurred.</string>
+    <string name="cache.failure.error.message">An unexpected error has occurred with the local database, but may have succeeded in the cloud.</string>
+    <string name="duplicate.failure.error.message">The data you submitted already exists.</string>
+    <string name="network.failure.error.message">An unexpected network error has occurred.</string>
 </resources>

@@ -13,7 +13,7 @@ class ListEntriesInteractor(private val presenter: ListEntriesPresentable,
                             val entriesWorker: EntriesWorkerType): ListEntriesBusinessLogic {
 
     override fun fetchEntries() {
-        val entries = entriesWorker.fetch {
+        entriesWorker.fetch {
             val entries = it.value
             if (entries == null || !it.isSuccess) {
                 this.presenter.presentFetchedEntries(error = it.error ?: DataError.UnknownReason(null))
