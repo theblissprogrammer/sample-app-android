@@ -43,6 +43,16 @@ android {
             versionNameSuffix "-staging"
         }
     }
+
+    applicationVariants.all { variant ->
+        def appName = "QoC Test"
+
+        if (variant.buildType.debuggable) {
+            appName = appName + " " + variant.buildType.name.capitalize()
+        }
+
+        resValue "string", "app_name", appName
+    }
 }
 
 dependencies {

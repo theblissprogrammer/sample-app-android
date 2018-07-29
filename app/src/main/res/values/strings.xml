@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">QoC Test</string>
     <string name="navigation_home">Home</string>
     <string name="hide_snackbar">Hide</string>
     <string name="loading">Loading…</string>
