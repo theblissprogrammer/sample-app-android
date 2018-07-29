@@ -20,6 +20,10 @@ import java.lang.ref.WeakReference
  * Created by ahmedsaad on 2018-07-26.
  */
 class ShowEntryFragment: BaseFragment(), ShowEntryDisplayable, HasDependencies {
+    companion object {
+        const val ENTRYID = "ENTRY_ID"
+    }
+
     // VIP variables
     private val interactor: ShowEntryBusinessLogic by lazy {
         ShowEntryInteractor(
@@ -38,7 +42,20 @@ class ShowEntryFragment: BaseFragment(), ShowEntryDisplayable, HasDependencies {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         configure()
+
+        entryID = if (entryID == 0) {
+            savedInstanceState?.getInt(ENTRYID, 0) ?: 0
+        } else {
+            entryID
+        }
+
         loadData()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putInt(ENTRYID, entryID)
     }
 
     private fun configure() {

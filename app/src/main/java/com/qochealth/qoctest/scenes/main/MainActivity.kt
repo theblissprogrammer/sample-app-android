@@ -21,11 +21,13 @@ class MainActivity: BaseActivity(), HasDependencies {
 
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager
-                .beginTransaction()
-                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
-                .add(R.id.main_fragment, BaseHomeFragment(), BaseHomeFragment::class.java.simpleName)
-                .commit()
+        if (savedInstanceState == null) {
+            supportFragmentManager
+                    .beginTransaction()
+                    .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                    .add(R.id.main_fragment, BaseHomeFragment(), BaseHomeFragment::class.java.simpleName)
+                    .commit()
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
